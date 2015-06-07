@@ -1,0 +1,31 @@
+{
+  "name": "labyrinth",
+  "version": "1.0.0",
+  "description": "Implementation of DigitasLBi's Lbayrinth puzzle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/another-dave/labyrinth.git"
+  },
+  "keywords": [
+    "labyrinth",
+    "digitaslbi",
+    "path-finding",
+    "javascript",
+    "node"
+  ],
+  "author": "Dave Moloney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/another-dave/labyrinth/issues"
+  },
+  "homepage": "https://github.com/another-dave/labyrinth#readme",
+  "devDependencies": {
+    "babel": "^5.5.4",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0"
+  }
+}
