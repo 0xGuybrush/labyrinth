@@ -2,6 +2,8 @@
 import parser from './parser.js'
 
 var start = parser('/Maze/Location/easy/start')
-start.then(function (value) {
-	console.log(JSON.stringify(value, null, '\t'))
-})
+start.then(printRoomDetails)
+
+function printRoomDetails(room) {
+	return console.log(JSON.stringify(room, null, '\t'))
+}
