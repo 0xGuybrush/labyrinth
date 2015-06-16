@@ -15,7 +15,7 @@ export default function (maze, room) {
     			})
 
     			response.on('end', function () {
-				resolve(JSON.parse(body))
+				resolve(new Room(JSON.parse(body)))
     			})  
 		}).on('error', function (e) {
 			reject(Error(e))

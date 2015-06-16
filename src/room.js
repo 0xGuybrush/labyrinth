@@ -2,11 +2,7 @@
 
 export default class {
 
-	constructor(roomPromise) {
-		var roomJson;
-		roomPromise.then(function(value) {
-			roomJson = value
-		})
+	constructor(roomJson) {
 		this.id = roomJson.LocationId
 		this.type = roomJson.LocationType
 		this.exits = roomJson.Exits
