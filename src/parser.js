@@ -1,10 +1,12 @@
 'use strict'
 var http = require('http')
 
-export default function (location) {
-	const DOMAIN = 'http://labyrinth.digitaslbi.com'
-	const JSON_SUFFIX = '/json';
-	var url = DOMAIN + location + JSON_SUFFIX
+export default function (maze, room) {
+	const DOMAIN = 'http://labyrinth.digitaslbi.com',
+	      PREFIX = '/Maze/Location/',
+	      JSON_SUFFIX = '/json',
+	      url = DOMAIN + PREFIX + maze + '/' + room + JSON_SUFFIX
+
 	return new Promise (function (resolve, reject) {
 		http.get(url, function (response) {
     			var body = ''

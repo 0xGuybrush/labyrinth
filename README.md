@@ -11,6 +11,6 @@ node dist/index.js
 ```
 
 ## Dependencies ##
-
+ - Node >= 0.12 
  - Babel (Transpiling of ECMAScript 6 features)
  - Gulp (Task runner for build process)
